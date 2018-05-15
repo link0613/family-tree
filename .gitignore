@@ -1,0 +1,4 @@
+.idea
+log/
+config/db.php
+composer.phar

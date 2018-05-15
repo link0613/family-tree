@@ -1,0 +1,609 @@
+/*Backend*/
+.center{text-align:center}
+.bold{font-weight:bold}
+.fs13em{font-size:1.3em}
+.ofHidden{overflow:hidden}
+.fL{float:left}
+.fR{float:right}
+
+body {
+    background: url("../images/bg-repeat.png");
+    background-attachment: fixed;
+    color: #555;
+    font-family: 'Rubik', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    position: relative;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.get-blue.get-org-chart .get-oc-tb {
+    background-color: #A3DA7A !important;
+    border: none;
+}
+
+/*color #91DC5A*/
+table.table.table-responsive.table-striped {
+    border: 1px solid #ddd;
+}
+
+.btn {
+    color: #777;
+}
+
+input[type=text].form-control,
+input[type=email].form-control,
+input[type=password].form-control,
+select.form-control {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0px;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+}
+
+.form-group.has-error input[type=text].form-control,
+.form-group.has-error input[type=password].form-control,
+.form-group.has-error input[type=email].form-control,
+.form-group.has-success select.form-control {
+    border-color: #da7a7a;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.tdBreak {
+    word-break: break-word;
+}
+
+.form-group.has-success input[type=text].form-control,
+.form-group.has-success input[type=email].form-control,
+.form-group.has-success input[type=password].form-control,
+.form-group.has-success select.form-control {
+    border-color: #A3DA7A;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.glyphicon {
+    color: #A3DA7A;
+}
+
+#add:focus {
+    outline: none;
+    color: #fff;
+}
+
+input[type=text].form-control:focus
+input[type=email].form-control:focus,
+input[type=password].form-control:focus, select.form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #cbfba9;
+}
+
+.panel-default > .panel-heading, .navbar-brand {
+    font-family: 'Courgette', cursive;
+    color: #777;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    height: auto;
+    padding: 16px 0px 0px 20px;
+}
+
+li > a.links {
+    font-family: 'Rubik', sans-serif;
+}
+
+/*FONTS*/
+table.table-responsive {
+    font-size: 13px;
+}
+
+/*-----*/
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aClass a {
+    padding: 5px 20px;
+}
+
+.aClass #btnLogout {
+    margin-left: 20px;
+}
+
+.aClass a.dropdown-toggle {
+    height: 32px;
+    margin: 10px 3px 0 3px;
+    padding: 5px 25px 0;
+}
+
+#btnLogout {
+    margin-top: -1px;
+    margin-left: 30px;
+    border-left: 1px dashed #a3da7a;
+    padding-left: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul.options {
+    margin-bottom: 10px;
+}
+
+ul.options li {
+    margin-top: 5px;
+}
+
+ul.options li a {
+    width: 100%;
+    text-align: left;
+}
+
+.navbar-custom {
+    border-bottom: 3px solid #a3da7a;
+    background: #fff;
+}
+
+.navbar-btn {
+    margin-top: 10px;
+}
+
+.btn.btn-default:hover {
+    background: #efefef;
+}
+
+#chartArea button.btn.btn-theme:hover {
+    background: #A3DA7A;
+    border-color: #A3DA7A;
+}
+
+text.get-text.get-text-2, text.get-text.get-text-1 {
+    font-size: 24px;
+}
+
+.btn.btn-default.styled {
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+    padding: 8px 6px 6px 8px;
+}
+
+.btn.btn-default.styled:hover {
+    background: #fefefe;
+    border: 2px solid #ccc;
+    padding: 7px;
+}
+
+#logo {
+    opacity: 0;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.container-fluid .navbar-right {
+    margin-right: 15px;
+}
+
+.block {
+    margin-bottom: 10px;
+    background: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 15px;
+    /*padding-bottom: 40px;*/
+    border: 1px solid rgba(220, 220, 220, 1);
+}
+
+.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    display: inline-flex;
+    margin-right: 10px;
+    color: #555;
+}
+
+.panel-heading {
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+p.copy {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #d4d4d4;
+}
+
+.btn-theme:hover {
+    background: #73bd3c;
+    border-color: #73bd3c;
+    color: white;
+}
+
+.btn-theme {
+    color: white;
+    background: #a3da7a;
+    border-color: #a3da7a;
+}
+
+.table.table-bordered.menu-table {
+    margin-top: 8px;
+}
+
+.summary {
+    text-align: right;
+}
+
+.filters td {
+    padding: 0px 0px 5px 5px !important;
+}
+
+div#chart a:last-child {
+    z-index: -99999999 !important;
+}
+
+ul.breadcrumb {
+    border: 1px solid rgba(220, 220, 220, 1);
+    background: #fff;
+}
+
+.noPad {
+    padding: 0 !important;
+}
+
+.noPadVert {
+    padding-top: 0 !important;
+}
+
+.profileCard {
+    border: 1px solid #ddd;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.profileCard caption {
+    height: 45px;
+    padding-top: 5px;
+    border-left: 1px solid #ddd;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    background: #a3da7a;
+    color: #E9F8DE;
+}
+
+.btn-group.w100 {
+    margin-top: 5px;
+}
+
+.pagination > .active > a {
+    background: #a3da7a !important;
+    border-color: #a3da7a;
+}
+
+h1 {
+    margin-top: 5px;
+    font-size: 26px;
+    border-bottom: 2px solid #a3da7a;
+}
+
+h2 {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+h4 {
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+h4 > small {
+    font-size: 15px;
+}
+
+#ui-datepicker-div thead th {
+    padding: 2px;
+    font-weight: normal;
+}
+
+#ui-datepicker-div td a {
+    text-align: center;
+}
+
+#ui-datepicker-div {
+    font-size: 15px;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background: rgb(247, 247, 247);
+}
+
+.field-maidenInput {
+    display: none;
+}
+
+.table.table-bordered.menu-table a {
+    color: #555;
+}
+
+.fa.active {
+    color: #a3da7a;
+}
+
+#scroller {
+    background: #a3da7a;
+    border-radius: 3px;
+    bottom: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    padding: 10px 20px;
+    position: fixed;
+    right: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.toggleArea:last-child {
+    -webkit-border-radius: 0px 0px 0px 5px;
+    -moz-border-radius: 0px 0px 0px 5px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.toggleArea {
+    z-index: 999;
+    padding: 2px 13px;
+    right: 0px;
+    width: 45px;
+    height: 38px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    top: 46px;
+    color: #EFEFEF;
+}
+
+.toggleArea.second {
+    top: 75px;
+    padding-top: 7px;
+}
+
+.toggleArea.third {
+    top: 115px;
+    padding-top: 5px;
+}
+
+table td.aslabel:first-child {
+    background: #f2f2f2;
+    padding: 10px !important;
+}
+
+i + .tooltip > .tooltip-inner {
+    background-color: #fff;
+    border: 1px solid #222;
+    color: #222;
+}
+
+#gender_val span.gender_option.active {
+    border: 1px solid #ddd;
+    font-weight: bold;
+    color: #222222;
+    background: #fbfbfb;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#gender_val span.gender_option {
+    padding: 2px 15px;
+    color: #bbb;
+}
+
+#full-size-form table > tbody > tr > td[colspan="2"].text-center.short {
+    padding: 5px !important;
+    font-weight: bold;
+    border-top: 2px solid #ccc;
+}
+
+#full-size-form table > tbody > tr#gender > td {
+    text-align: center;
+    padding: 4px !important;
+}
+
+#full-size-form table > tbody > tr > td[colspan="2"].text-center {
+    padding: 10px !important;
+}
+
+#full-size-form #full-size-form input#gender {
+    border: none;
+}
+
+#full-size-form i.fa.fa-question-circle-o {
+    margin-top: 3px;
+    color: #555;
+}
+
+#full-size-form table > tbody > tr > td {
+    padding: 0px 15px 5px 15px !important;
+    vertical-align: middle !important;
+}
+
+#full-size-form input[type=text].form-control,
+#full-size-form input[type=email].form-control,
+#full-size-form select.form-control,
+#full-size-form textarea.form-control {
+    width: 100%;
+}
+
+.get-up {
+    top: 46px !important;
+}
+
+td.changeable#gender_val span {
+    cursor: pointer;
+}
+
+circle.get-btn {
+    display: none;
+}
+
+#chartArea #chart .get-left,
+#chartArea #chart .get-up,
+#chartArea #chart .get-down,
+#chartArea #chart .get-right {
+    opacity: 0;
+}
+
+svg > g > g {
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Founded nodes animation */
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.foundNode {
+    -webkit-animation: pulse .7s;
+    -moz-animation: pulse .7s;
+    animation: pulse .7s;
+}
+
+.expandButton {
+    display: block;
+    font-weight: bold;
+    font: 16px Arial, sans-serif !important;
+    float: right;
+}
+
+.expandButton:hover, .expandButton:active, .expandButton:visited {
+    text-decoration: none;
+}
+
+.x-pand {
+    position: fixed;
+    bottom: -5px;
+    right: 2px;
+}
+
+#marriageChild {
+    float: right;
+    height: 20px;
+    margin-top: 0px;
+    width: 4%;
+}
+
+#siblingsDiv {
+    display: none;
+    padding-top: 10px;
+}
+
+#siblingChild {
+    float: right;
+    height: 20px;
+    margin-top: 0px;
+    width: 4%;
+}
+
+#marriageDiv {
+    display: none;
+    padding-top: 10px;
+}
+
+#partnerChildren {
+    display: none;
+}
+
+#createSiblingChild, #createMarriageChild {
+    margin-left: 20px;
+}
+
+.profileImage {
+    width: 50px;
+    height: 50px;
+}
+/* BOF #TracingRootsForm */
+#TracingRootsForm h5,
+#TracingRootsForm h6,
+#Researcher-fields h6{
+    font-weight:bold;
+    text-decoration:underline;
+}
+#TracingRootsForm h5{font-size: 1.1em;min-height: 2.2em}
+#TrApplicant-personalDetails h5,
+#Researcher-fields .field-researcher-autocomplete_state .control-label{color:#a3da7a}
+#TrAncestor-fields h5,
+#Researcher-fields .field-researcher-autocomplete_district .control-label{color:#7aa4da}
+#TrAncestorMigration h5,
+#Researcher-fields .field-researcher-autocomplete_district_sub .control-label{color:#da7a7a}
+#TrApplicant-otherAncestors h5,
+#Researcher-fields .field-researcher-autocomplete_city .control-label{color:#7ad9da}
+#TrAncestorDetails-partE h5,
+#Researcher-fields .field-researcher-custom_location .control-label{color:#da7acd}
+#TrAncestor-files h5,
+#Researcher-fields .field-researcher-address .control-label{color:#9b7ada}
+#TracingRootsForm h6,
+#Researcher-fields h6{font-size: 1em}
+#Researcher-fields h6{margin-top:0}
+#TracingRootsForm .form-group.col-md-12,
+#Researcher-fields .form-group.col-md-12 {border: 1px #ddd dashed}
+/* EOF #TracingRootsForm */
+
+body#home>.alert {
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    top: 62px;
+}

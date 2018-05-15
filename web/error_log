@@ -1,0 +1,206 @@
+[18-Jun-2017 23:35:28 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[18-Jun-2017 23:35:52 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[18-Jun-2017 23:49:10 UTC] PHP Parse error:  syntax error, unexpected ''content'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/gapssai/public_html/views/gotra/index.php on line 18
+[19-Jun-2017 18:50:51 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[19-Jun-2017 19:01:06 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/gapssai/public_html/views/gotra/index.php on line 14
+[19-Jun-2017 19:42:45 UTC] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/gapssai/public_html/views/layouts/profile.php on line 16
+[19-Jun-2017 19:42:56 UTC] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/gapssai/public_html/views/layouts/profile.php on line 16
+[19-Jun-2017 19:44:04 UTC] PHP Parse error:  syntax error, unexpected 'case' (T_CASE) in /home/gapssai/public_html/views/layouts/profile.php on line 16
+[19-Jun-2017 19:47:30 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/gapssai/public_html/views/layouts/profile.php on line 15
+[19-Jun-2017 19:47:43 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/gapssai/public_html/views/layouts/profile.php on line 15
+[19-Jun-2017 19:47:50 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/gapssai/public_html/views/layouts/profile.php on line 15
+[19-Jun-2017 20:12:11 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/layouts/profile.php on line 13
+[19-Jun-2017 20:15:19 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/gapssai/public_html/views/gotra/index.php on line 13
+[19-Jun-2017 20:29:42 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 14
+[19-Jun-2017 20:30:13 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 14
+[19-Jun-2017 21:13:32 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[19-Jun-2017 21:14:36 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[21-Jun-2017 19:16:50 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/layouts/profile.php on line 14
+[21-Jun-2017 19:17:10 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/layouts/profile.php on line 14
+[21-Jun-2017 20:30:28 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 17
+[21-Jun-2017 20:31:05 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 17
+[21-Jun-2017 20:31:42 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 37
+[21-Jun-2017 20:32:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/gapssai/public_html/views/layouts/profile.php on line 14
+[21-Jun-2017 20:33:17 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/gapssai/public_html/views/layouts/profile.php on line 14
+[21-Jun-2017 20:34:03 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/gapssai/public_html/views/layouts/profile.php on line 14
+[21-Jun-2017 20:35:06 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 37
+[22-Jun-2017 02:57:11 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 17
+[22-Jun-2017 03:34:22 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 15
+[22-Jun-2017 03:36:33 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 15
+[22-Jun-2017 03:52:42 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\web\View::setPageTitle() does not exist' in /home/gapssai/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/gapssai/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\web\\View', 'setPageTitle')
+#1 /home/gapssai/public_html/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\web\\View::s...')
+#2 /home/gapssai/public_html/vendor/yiisoft/yii2/base/View.php(328): require('/home/gapssai/p...')
+#3 /home/gapssai/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/gapssai/p...', Array)
+#4 /home/gapssai/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/gapssai/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/gapssai/public_html/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/home/gapssai/p...', 17, 'yii\\web\\View', 'setPageTitle', Array, 3)
+#7 /home/gapssai/public_html/vendor/yiisoft/yii2/base/View.php(328): require('/home/gapssai/p...')
+#8 /home/gapssai/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/gapssai/p...', Array)
+#9 /home/gapssai/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/gapssai/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/gapssai/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#13 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\View::setPageTitle()' in /home/gapssai/public_html/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /home/gapssai/public_html/views/gotra/index.php(17): yii\base\Component->__call('setPageTitle', Array)
+#1 /home/gapssai/public_html/views/gotra/index.php(17): yii\web\View->setPageTitle('custom page tit...')
+#2 /home/gapssai/public_html/vendor/yiisoft/yii2/base/View.php(328): require('/home/gapssai/p...')
+#3 /home/gapssai/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/gapssai/p...', Array)
+#4 /home/gapssai/public_html/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/gapssai/p...', Array, Object(app\controllers\GotraController))
+#5 /home/gapssai/public_html/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\GotraController))
+#6 /home/gapssai/public_html/controllers/GotraController.php(52): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\controllers\GotraController->actionIndex()
+#8 /home/gapssai/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /home/gapssai/public_html/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /home/gapssai/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#11 /home/gapssai/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('gotra/index', Array)
+#12 /home/gapssai/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/gapssai/public_html/web/index.php(12): yii\base\Application->run()
+#14 {main}
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin',
+    'PWD' => '/usr/local/cpanel/cgi-sys',
+    'SHLVL' => '0',
+    'PHP_FCGI_MAX_REQUESTS' => '5000',
+    'HTTP_CONNECTION' => 'close',
+    'SCRIPT_NAME' => '/web/index.php',
+    'REQUEST_URI' => '/gotra/index',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_URL' => '/web/gotra/index',
+    'REMOTE_PORT' => '16500',
+    'SCRIPT_FILENAME' => '/home/gapssai/public_html/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@kulbeli.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/gapssai/public_html',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/gapssai/public_html',
+    'REMOTE_ADDR' => '198.50.155.77',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '43.255.154.57',
+    'SERVER_NAME' => 'www.kulbeli.com',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_COOKIE' => 'PHPSESSID=6ef2ilaq70933jdbepn780hj05; _csrf=0e04b9604562389fb0a9ac8039c885c262ff778023e734ff27a47fc2ebaa9591a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GC5Cfn5k7wahI6_a61oYJAhQo9HSe5Ua%22%3B%7D;',
+    'HTTP_REFERER' => 'http://www.kulbeli.com/gotra/index',
+    'HTTP_HOST' => 'www.kulbeli.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'UNIQUE_ID' => 'WUs-CpRI6JMADRa9@30AAAJO',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WUs-CpRI6JMADRa9@30AAAJO',
+    'REDIRECT_REDIRECT_STATUS' => '200',
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'WUs-CpRI6JMADRa9@30AAAJO',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1498103562.886948108673095703125,
+    'REQUEST_TIME' => 1498103562,
+]
+[22-Jun-2017 16:24:56 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 13
+[22-Jun-2017 16:46:53 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/gapssai/public_html/views/gotra/index.php on line 19
+[22-Jun-2017 16:48:12 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/gapssai/public_html/views/layouts/profile.php on line 17
+[22-Jun-2017 23:54:56 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/forum/index.php on line 18
+[22-Jun-2017 23:55:33 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/forum/index.php on line 19
+[22-Jun-2017 23:55:58 UTC] PHP Fatal error:  Cannot use yii\helpers\Html as Html because the name is already in use in /home/gapssai/public_html/views/forum/index.php on line 6
+[22-Jun-2017 23:57:34 UTC] PHP Fatal error:  Cannot use yii\helpers\Html as Html because the name is already in use in /home/gapssai/public_html/views/forum/index.php on line 6
+[22-Jun-2017 23:58:46 UTC] PHP Fatal error:  Cannot use yii\helpers\Html as Html because the name is already in use in /home/gapssai/public_html/views/forum/index.php on line 6
+[22-Jun-2017 23:59:24 UTC] PHP Fatal error:  Cannot use yii\helpers\Html as Html because the name is already in use in /home/gapssai/public_html/views/forum/index.php on line 6
+[23-Jun-2017 00:00:24 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/forum/index.php on line 17
+[23-Jun-2017 00:00:43 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/forum/index.php on line 24
+[23-Jun-2017 00:02:34 UTC] PHP Parse error:  syntax error, unexpected '_search' (T_STRING) in /home/gapssai/public_html/views/forum/index.php on line 26
+[23-Jun-2017 00:03:12 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/forum/index.php on line 18
+[23-Jun-2017 00:04:08 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/forum/index.php on line 18
+[23-Jun-2017 00:04:37 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/forum/index.php on line 18
+[23-Jun-2017 00:07:01 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/forum/index.php on line 18
+[23-Jun-2017 00:08:05 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/forum/index.php on line 20
+[23-Jun-2017 00:08:12 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/forum/index.php on line 20
+[23-Jun-2017 00:08:44 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/forum/index.php on line 26
+[23-Jun-2017 00:09:22 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/forum/index.php on line 26
+[23-Jun-2017 00:10:28 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/forum/index.php on line 25
+[23-Jun-2017 01:14:01 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/gapssai/public_html/views/post/index.php on line 24
+[23-Jun-2017 18:54:44 UTC] PHP Parse error:  syntax error, unexpected 'Blog' (T_STRING), expecting ']' in /home/gapssai/public_html/views/post/index.php on line 25
+[02-Jul-2017 16:20:24 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/tree/chart.php on line 215
+[04-Jul-2017 20:43:43 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 17
+[04-Jul-2017 20:49:19 UTC] PHP Fatal error:  Cannot use yii\helpers\Html as Html because the name is already in use in /home/gapssai/public_html/views/gotra/index.php on line 11
+[04-Jul-2017 20:58:55 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[04-Jul-2017 21:01:01 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[04-Jul-2017 21:13:30 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/layouts/profile.php on line 15
+[04-Jul-2017 21:14:35 UTC] PHP Fatal error:  Class 'CHtml' not found in /home/gapssai/public_html/views/layouts/profile.php on line 27
+[04-Jul-2017 21:15:45 UTC] PHP Fatal error:  Call to undefined method Yii::app() in /home/gapssai/public_html/views/layouts/profile.php on line 27
+[04-Jul-2017 21:20:45 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[04-Jul-2017 21:21:02 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[04-Jul-2017 21:21:32 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 16
+[04-Jul-2017 21:24:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/layouts/profile.php on line 14
+[04-Jul-2017 21:24:38 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/layouts/profile.php on line 14
+[04-Jul-2017 21:26:30 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 27
+[04-Jul-2017 21:27:23 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 27
+[17-Jul-2017 02:46:26 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/gapssai/public_html/views/gotra/index.php on line 15
+[19-Jul-2017 04:54:36 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/gotra/index.php on line 18
+[19-Jul-2017 17:27:12 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 28
+[19-Jul-2017 17:29:07 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 28
+[19-Jul-2017 17:52:17 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 29
+[19-Jul-2017 17:52:21 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 29
+[19-Jul-2017 17:52:35 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 29
+[19-Jul-2017 17:52:47 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 29
+[19-Jul-2017 17:53:47 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 31
+[21-Jul-2017 19:26:45 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 29
+[21-Jul-2017 19:27:21 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 27
+[21-Jul-2017 19:27:39 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 27
+[22-Jul-2017 04:51:24 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 27
+[22-Jul-2017 04:52:00 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 29
+[22-Jul-2017 05:23:24 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 32
+[22-Jul-2017 20:14:11 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/gapssai/public_html/views/layouts/profile.php on line 264
+[22-Jul-2017 20:19:42 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/gapssai/public_html/views/layouts/profile.php on line 35
+[22-Jul-2017 20:21:13 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/layouts/profile.php on line 37
+[22-Jul-2017 20:23:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gapssai/public_html/views/layouts/profile.php on line 37
+[22-Jul-2017 20:29:56 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/gapssai/public_html/views/layouts/profile.php on line 258
+[22-Jul-2017 20:32:13 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/gapssai/public_html/views/layouts/profile.php on line 31
+[22-Jul-2017 21:01:25 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/gapssai/public_html/views/layouts/profile.php on line 34
+[22-Jul-2017 21:23:30 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/gapssai/public_html/views/layouts/profile.php on line 36
+[22-Jul-2017 21:23:57 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/gapssai/public_html/views/layouts/profile.php on line 36
+[24-Nov-2017 17:30:50 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 24926720 bytes) in /home/gapssai/public_html/migrations/171115_160444_tracingRoots/states.php on line 31
+[09-Mar-2018 13:15:08 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/gapssai/public_html/controllers/ProfileController.php on line 491
+[09-Mar-2018 13:16:58 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/gapssai/public_html/controllers/ProfileController.php on line 491
+[09-Mar-2018 13:17:02 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/gapssai/public_html/controllers/ProfileController.php on line 491
+[09-Mar-2018 13:17:03 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/gapssai/public_html/controllers/ProfileController.php on line 491
+[09-Mar-2018 13:17:55 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/gapssai/public_html/controllers/ProfileController.php on line 491
+[09-Mar-2018 13:29:15 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/gapssai/public_html/controllers/ProfileController.php on line 491
+[09-Mar-2018 15:15:45 UTC] PHP Parse error:  syntax error, unexpected 'mailto' (T_STRING) in /home/gapssai/public_html/controllers/ProfileController.php on line 488
+[13-Mar-2018 14:11:19 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[15-Mar-2018 19:14:59 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[17-Mar-2018 01:25:40 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[17-Mar-2018 11:41:21 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[23-Mar-2018 21:03:05 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[24-Mar-2018 14:07:29 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[24-Mar-2018 14:07:33 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[27-Mar-2018 16:01:03 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[04-Apr-2018 16:04:55 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[06-Apr-2018 22:10:22 UTC] PHP Fatal error:  Call to a member function GetUserName() on null in /home/gapssai/public_html/views/forum/view.php on line 62
+[10-May-2018 23:17:59 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:19:32 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:19:38 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:19:38 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:19:39 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:19:40 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:19:45 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:19:47 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:14 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:15 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:16 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:17 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:17 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:18 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:18 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:28 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:36 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:37 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39
+[10-May-2018 23:20:38 UTC] PHP Parse error:  syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/u2jbsm64zj30/public_html/public_html/config/web.php on line 39

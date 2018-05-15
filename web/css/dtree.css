@@ -1,0 +1,86 @@
+.linage {
+    fill: none;
+    stroke: grey;
+    stroke-linejoin: round;
+}
+
+.marriage {
+    fill: none;
+    stroke: pink;
+}
+
+.marriage-second {
+    fill: none;
+    stroke: red;
+}
+
+.hidden{
+    hidden: true
+}
+
+.man {
+    background:url(../images/male.jpg) no-repeat left;
+	background-position: 4%; 
+    background-size: 22% 70%;
+    background-color: #a3da7a;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.woman {
+    background:url(../images/female.jpg) no-repeat left;
+    background-position: 4%; 
+    background-size: 22% 70%;
+    background-color: #a3da7a;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.nodeText{
+    text-align: left;
+    padding: 3%;
+    font-style: italic;
+    font: 12px sans-serif;
+    color: white;
+    margin-left: 23%;
+    word-break: break-all;
+}
+
+.no_spouse {
+    border: dotted;
+    border-color: grey;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.no_spouse:before {
+    font: 10px sans-serif;
+    content: "Ex partner:";
+    margin-left: 40%;
+}
+
+.woman_dead {
+    background: url(https://cdn3.iconfinder.com/data/icons/rcons-user-action/32/girl-512.png) no-repeat left,
+    linear-gradient(-25deg, transparent 70%, black) no-repeat #a3da7a;
+    background-size: 22% 70%;
+    background-position: 4%; 
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.man_dead {
+    background: url(https://blog.newrelic.com/wp-content/uploads/avatar.png) no-repeat left,
+    linear-gradient(-25deg, transparent 70%, black) no-repeat #a3da7a;
+    background-size: 22% 70%;
+    background-position: 4%; 
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    height: 50px;
+}

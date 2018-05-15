@@ -1,0 +1,6 @@
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+RewriteEngine On
+            RewriteCond %{HTTP_HOST} !^localhost$ [NC]
+        RewriteRule ^(.*)$ http://127.0.0.1/$1 [L,R=301]
