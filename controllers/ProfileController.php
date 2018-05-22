@@ -66,13 +66,13 @@ class ProfileController extends CController
             'user_id' => Yii::$app->user->id,
             'root' => 1
         ])->one();
-
+        
         if (is_null($rootItem)) {
             throw new NotFoundHttpException('User no found. Please do re-login.');
         }
 
         return $this->render('first', [
-            'rootItemId' => $rootItem->getId(),
+            'rootItem' => $rootItem,
             'model' => new Item(['user_id' => Yii::$app->user->id, 'root' => 0]),
             'gotra' => new Gotra(),
             'gotras' => Gotra::find()->orderBy('name')->select('name')->asArray()->all()
@@ -331,16 +331,26 @@ class ProfileController extends CController
         //echo '<pre>'; var_dump('####',$gotra); echo '</pre>';
 
         if (Yii::$app->request->post('Item') && !is_null($id)) {
-            Yii::$app->session->setFlash('success', 'Profile has been saved.');
+            Yii::$app->session->setFlash('success', 'Profile has been saved.');        
+
             return $this->refresh();
         }
-
-        return $this->render('view', [
-            'model' => $model,
-            'gotra' => $gotra,
-            'gotras' => $gotras,
-            'death' => $death
-        ]);
+        try {
+            if ($data['stay_treeview'] == '0') {
+                return $this->render('view', [
+                    'model' => $model,
+                    'gotra' => $gotra,
+                    'gotras' => $gotras,
+                    'death' => $death
+                ]);
+            } else {
+                $this->refresh();
+                return $this->redirect(['tree/chart', 'id' => $model->getId()]);
+            }
+        } catch (Exception $e) {
+            $this->refresh();
+            return $this->redirect(['tree/chart', 'id' => $model->getId()]);
+        }
     }
 
     /**

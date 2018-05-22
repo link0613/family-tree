@@ -123,7 +123,7 @@ class SiteController extends CController
 						'gender' => (int)$profile->attributes['gender'],
 						'b_date' => $profile->attributes['b_date']
 					]);
-	                $item->save();
+                    $item->save();
 				}
 
 				/*$message = readfile(Yii::$app->basePath.'/mail/templates/registration_welcome.html');*/

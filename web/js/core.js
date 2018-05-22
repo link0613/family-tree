@@ -27,7 +27,7 @@ function initDTreeSVG(treeData) {
         width: chartWidth,
         nodeWidth: 200,
         callbacks: {
-            nodeClick: function (name, extra, id) {
+            nodeClick: function (name, extra, id, gender) {
                 fillNodeTypeSelect('#node_type_select');
 
                 var a = "/view";
@@ -35,6 +35,8 @@ function initDTreeSVG(treeData) {
                 profile.find("#f_name").html(name);
                 profile.find("#l_name").html(extra.last_name);
                 profile.find("#birth").html(extra.birth);
+                profile.find("#gender").html(gender);
+                profile.find("#genderTr").hide();
 
                 profile.find("#deathTr").hide();
                 if (extra.death != null) {
@@ -704,6 +706,8 @@ function addNewNodeHandler() {
     } else {
         $('#newPersonGender').val(0);
     }
+
+
 }
 
 /*
@@ -713,3 +717,104 @@ $('#casts-list').change(function () {
     var caste = $(this).val();
     window.location.replace('/gotra?id=' + encodeURIComponent(caste));
 });
+
+$('.add-entry-father').click(function() {
+    $('#node_type_select').val('2').trigger('change');
+    $('.modal-add-entry').show();
+    $('.add-entry-node').hide();
+});
+
+$('.add-entry-mother').click(function() {
+    $('#node_type_select').val('1').trigger('change');
+    $('.modal-add-entry').show();
+    $('.add-entry-node').hide();
+});
+
+$('.add-entry-sister').click(function() {
+    $('#node_type_select').val('3').trigger('change');
+    $('.modal-add-entry').show();
+    $('.add-entry-node').hide();
+});
+
+$('.add-entry-brother').click(function() {
+    $('#node_type_select').val('4').trigger('change');
+    $('.modal-add-entry').show();
+    $('.add-entry-node').hide();
+});
+
+$('.add-entry-son').click(function() {
+    $('#node_type_select').val('6').trigger('change');
+    $('.modal-add-entry').show();
+    $('.add-entry-node').hide();
+});
+
+$('.add-entry-daughter').click(function() {
+    $('#node_type_select').val('5').trigger('change');
+    $('.modal-add-entry').show();
+    $('.add-entry-node').hide();
+});
+
+$('.add-entry-partner').click(function() {
+    $('#node_type_select').val('7').trigger('change');
+    $('.modal-add-entry').show();
+    $('.add-entry-node').hide();
+});
+
+        
+$('.add-entry-me').click(function() {
+    document.getElementById('view').click()
+});
+
+$('#add').click(function() {
+    setTimeout(function(){
+        if ($('.node_type_1').prop('disabled')) {
+            $('.add-entry-mother').hide();
+            $('#curve1').hide();
+        } else {
+            $('.add-entry-mother').show();
+            $('#curve1').show();
+        }
+        if ($('.node_type_2').prop('disabled')) {
+            $('.add-entry-father').hide();
+            $('#curve2').hide();
+        } else {
+            $('.add-entry-father').show();
+            $('#curve2').show();
+        }     
+        if ($('.node_type_3').prop('disabled')) {
+            $('.add-entry-sister').hide();
+            $('#curve3').hide();
+        } else {
+            $('.add-entry-sister').show();
+            $('#curve3').show();
+        }
+        if ($('.node_type_4').prop('disabled')) {
+            $('.add-entry-brother').hide();
+            $('#curve4').hide();
+        } else {
+            $('.add-entry-brother').show();
+            $('#curve4').show();
+        }
+        $('.add-entry-center-image').attr('src',$('#profile #image').attr('src'));
+        $('.add-entry-fname').html($('#profile #f_name').text());
+        $('.add-entry-lname' ).html($('#profile #l_name').text());
+        $('.add-entry-birth').html($('#profile #birth').text());
+        $('.add-entry-partner').removeClass('add-entry-woman');
+        $('.add-entry-partner').removeClass('add-entry-man');
+        $('.add-entry-partner').addClass($('#profile #gender').text()==='man'?'add-entry-woman':'add-entry-man');
+        $('.add-entry-partner .add-entry-image').attr('src', $('#profile #gender').text()==='man'?'/images/woman.jpg':'/images/man.jpg');
+
+    }, 0);
+    try {
+        document.getElementById('stay_treeview').value = 0;
+    } catch (err){    
+    }
+
+    $('.modal-add-entry').hide();
+    $('.add-entry-node').show();
+});
+
+function goAndStay(){
+    document.getElementById('stay_treeview').value = 1;
+    $('#full-size-form').submit();
+}

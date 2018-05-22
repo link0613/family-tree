@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
     <div class="modal fade" id="nodeType">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-add-entry">
             <div class="modal-content">
                 <div class="modal-header" style="padding: 8px;">
                     <p>
@@ -135,12 +135,62 @@ $this->params['breadcrumbs'][] = $this->title;
                             <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">
                                 Close
                             </button>
+                            <input type="button" class="btn btn-theme" value="Add" id="add_and_stay" onclick="goAndStay()">
+                            <input type="hidden" id="stay_treeview" name="stay_treeview" value="0">
                             <input type="submit" class="btn btn-theme" value="Add and complete profile">
                         </p>
+
                     </form>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
+        <div class="add-entry-wrapper">
+            <div class="add-entry-node">                
+                <?= Html::img(Url::toRoute('images/add-curve1.svg'), ['id' => 'curve1', 'class' => 'add-entry-curve']) ?>
+                <?= Html::img(Url::toRoute('images/add-curve2.svg'), ['id' => 'curve2', 'class' => 'add-entry-curve']) ?>
+                <?= Html::img(Url::toRoute('images/add-curve3.svg'), ['id' => 'curve3', 'class' => 'add-entry-curve']) ?>
+                <?= Html::img(Url::toRoute('images/add-curve4.svg'), ['id' => 'curve4', 'class' => 'add-entry-curve']) ?>
+                <?= Html::img(Url::toRoute('images/add-curve5.svg'), ['id' => 'curve5', 'class' => 'add-entry-curve']) ?>
+                <div class="add-entry-me add-entry-button">
+                    <?= Html::img(Url::toRoute('images/man.jpg'), ['class' => 'add-entry-center-image']) ?>
+                    <div class="add-entry-text">
+                        <div class='add-entry-fname add-entry-text-item'>fist name</div>
+                        <div class='add-entry-lname add-entry-text-item'>last name</div>
+                        <div class='add-entry-birth add-entry-text-item'>brith</div>
+                    </div>
+                </div>
+                <div class="add-entry-father add-entry-button">
+                    <?= Html::img(Url::toRoute('images/man.jpg'), ['class' => 'add-entry-image']) ?>
+                    <div class="add-entry-text">Add Father</div>
+                </div>
+                <div class="add-entry-mother add-entry-button">
+                    <?= Html::img(Url::toRoute('images/woman.jpg'), ['class' => 'add-entry-image']) ?>
+                    <div class="add-entry-text">Add Mother</div>
+                </div>
+                <div class="add-entry-brother add-entry-button">
+                    <?= Html::img(Url::toRoute('images/man.jpg'), ['class' => 'add-entry-image']) ?>
+                    <div class="add-entry-text">Add Brother</div>
+                </div>
+                <div class="add-entry-sister add-entry-button">
+                    <?= Html::img(Url::toRoute('images/woman.jpg'), ['class' => 'add-entry-image']) ?>
+                    <div class="add-entry-text">Add Sister</div>
+                </div>
+                <div class="add-entry-son add-entry-button">
+                    <?= Html::img(Url::toRoute('images/man.jpg'), ['class' => 'add-entry-image']) ?>
+                    <div class="add-entry-text">Add Son</div>
+                </div>
+                <div class="add-entry-daughter add-entry-button">
+                    <?= Html::img(Url::toRoute('images/woman.jpg'), ['class' => 'add-entry-image']) ?>
+                    <div class="add-entry-text">Add Daughter</div>
+                </div>
+                <div class="add-entry-partner add-entry-button">
+                    <?= Html::img(Url::toRoute('images/man.jpg'), ['class' => 'add-entry-image']) ?>
+                    <div class="add-entry-text">Add Spouse/Partner</div>
+                </div>
+                <button type="button" class="add-entry-close close" data-dismiss="modal" aria-hidden="true">×</button>
+
+            </div>
+        </div>
     </div><!-- /.modal -->
 
     <div class="block noPadVert">
@@ -183,6 +233,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     <tr id="deathTr" style="<?= $showDeath; ?>">
                         <td><?= Yii::t('app', 'Death date') ?></td>
                         <td id="death"><?= isset($first['death']) ?  $first['death'] : null; ?></td>
+                    </tr>
+                    <tr id="genderTr">
+                        <td></td>
+                        <td id="gender"><?= isset($first['class']) ? $first['class'] : '' ?></td>
                     </tr>
 
                 <?php if($canEdit){ ?>

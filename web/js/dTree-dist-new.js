@@ -109,7 +109,7 @@ var GLOBAL_OFFSET = 600;
                     if (d.data.hidden) {
                         return;
                     }
-                    opts.callbacks.nodeClick(d.data.name, d.data.extra, d.data.id);
+                    opts.callbacks.nodeClick(d.data.name, d.data.extra, d.data.id, d.data.class);
                 });
 
                 var peopleImages = gTags.filter(function (d) {
@@ -219,6 +219,65 @@ var GLOBAL_OFFSET = 600;
                         }
 
                         return res;
+                    });
+
+
+                peopleImages.append("circle")
+                    .attr('cx', function (d) {
+                        return (d.x + GLOBAL_OFFSET + 25) + 'px';
+                    })
+                    .attr('cy', function (d) {
+                        return (d.y - d.cHeight / 2 - 10 ) + 'px';
+                    })
+                    .attr("r", function (d) {
+                        return (d.cHeight)/8 + 'px';
+                    })
+                    .attr("class", function (d) {
+                        return "add-entry"
+                    })                    
+                    .on('click', function (d) {
+                        document.getElementById('add').click()
+                    });
+                
+
+                peopleImages.append("line")
+                    .attr('x1', function (d) {
+                        return (d.x + GLOBAL_OFFSET + 25) + 'px';
+                    })
+                    .attr('y1', function (d) {
+                        return (d.y - d.cHeight / 2 - 13 ) + 'px';
+                    })
+                    .attr('x2', function (d) {
+                        return (d.x + GLOBAL_OFFSET + 25) + 'px';
+                    })
+                    .attr('y2', function (d) {
+                        return (d.y - d.cHeight / 2 - 7 ) + 'px';
+                    })
+                    .attr("class", function (d) {
+                        return "add-entry-plus"
+                    })
+                    .on('click', function (d) {
+                        document.getElementById('add').click()
+                    });
+
+                peopleImages.append("line")
+                    .attr('x1', function (d) {
+                        return (d.x + GLOBAL_OFFSET + 22) + 'px';
+                    })
+                    .attr('y1', function (d) {
+                        return (d.y - d.cHeight / 2 - 10 ) + 'px';
+                    })
+                    .attr('x2', function (d) {
+                        return (d.x + GLOBAL_OFFSET + 28) + 'px';
+                    })
+                    .attr('y2', function (d) {
+                        return (d.y - d.cHeight / 2 - 10 ) + 'px';
+                    })
+                    .attr("class", function (d) {
+                        return "add-entry-plus"
+                    })
+                    .on('click', function (d) {
+                        document.getElementById('add').click()
                     });
 
                 // Hiding this so we can tighten vertical spacing:

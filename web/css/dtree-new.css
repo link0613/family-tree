@@ -94,6 +94,256 @@
     height: 50px;
 }
 
+.add-entry {
+    stroke: #a3da7a;
+    fill: #a3da7a;
+}
+.add-entry:hover {
+    stroke:#a3da7a;
+    fill: #80d83d;
+    opacity: 1.0;
+}
+
+.add-entry-text {
+    color: a3da7a
+}
+
+.add-entry-node {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    min-width: 600px;
+}
+
+.add-entry-me {
+    position: absolute;
+    left: 200px;
+    top: 155px;
+    width: 185px;
+    height: 92px;
+    background-color: #a3da7a; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.add-entry-father {
+    position: absolute;
+    left: 139px;
+    top: 61px;
+    width: 140px;
+    height: 54px;
+    background-color: #9bd8ea; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-entry-mother {
+    position: absolute;
+    left: 312px;
+    top: 61px;
+    width: 140px;
+    height: 54px;
+    background-color: #ecc8d9; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-entry-brother {
+    position: absolute;
+    left: 4px;
+    top: 136px;
+    width: 140px;
+    height: 54px;
+    background-color: #9bd8ea; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-entry-sister {
+    position: absolute;
+    left: 4px;
+    top: 212px;
+    width: 140px;
+    height: 54px;
+    background-color: #ecc8d9; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-entry-son {
+    position: absolute;
+    left: 139px;
+    top: 291px;
+    width: 140px;
+    height: 54px;
+    background-color: #9bd8ea; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-entry-daughter {
+    position: absolute;
+    left: 312px;
+    top: 291px;
+    width: 140px;
+    height: 54px;
+    background-color: #ecc8d9; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-entry-partner {
+    position: absolute;
+    left: 436px;
+    top: 173px;
+    width: 160px;
+    height: 54px;
+    background-color: #a3da7a; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-entry-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-add-entry {
+    display: none;
+}
+
+.add-entry-close {
+    right: 15px !important;
+    top: 30px !important;
+    position: absolute;
+    background-color: white !important;
+    width: 25px;
+    height: 25px;
+    border-radius: 7px;
+}
+
+.add-entry-curve {
+    position: absolute;
+}
+
+.add-entry-text {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+    width: 100%;
+    justify-content: center;
+}
+
+.add-entry-text-item {
+    width: 90px;
+    overflow: hidden;
+}
+
+.add-entry-image {
+    height: 36px;
+    border-radius: 6px;
+}
+
+.add-entry-button {
+    display: flex;
+    padding: 9px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.add-entry-button:hover {
+    filter: brightness(1.10);
+}
+
+.add-entry-plus {
+    stroke: white;
+}
+
+.add-entry-woman {
+    background-color: #ecc8d9 !important; 
+}
+
+.add-entry-man {
+    background-color: #9bd8ea !important; 
+}
+
+.add-entry-center-image {
+    height: 72px;
+    border-radius: 7px;
+}
+
+#genderTr {
+    display: none;
+}
+
+.new-entry-me {
+    position: absolute;
+    left: 183px;
+    top: 155px;
+    width: 240px;
+    height: 120px;
+    background-color: #a3da7a; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.new-entry-father {
+    position: absolute;
+    left: 90px;
+    top: 24px;
+    width: 180px;
+    height: 90px;
+    background-color: #9bd8ea; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.new-entry-mother {
+    position: absolute;
+    left: 340px;
+    top: 24px;
+    width: 180px;
+    height: 90px;
+    background-color: #ecc8d9; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.new-entry-image {
+    height: 72px;
+    border-radius: 6px;
+}
+
+.new-entry-center-image {
+    height: 96px;
+    border-radius: 7px;
+}
+
+.create-entry-wrapper {
+    display: flex;
+    height: 480px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-entry-text {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+    width: 100%;
+    justify-content: center;
+}
+
 @media print {
     .footer {
         display: none;
