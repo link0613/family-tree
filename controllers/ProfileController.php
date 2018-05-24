@@ -336,7 +336,7 @@ class ProfileController extends CController
             return $this->refresh();
         }
         try {
-            if ($data['stay_treeview'] == '0') {
+            if (isset($data['stay_treeview'])) {
                 return $this->render('view', [
                     'model' => $model,
                     'gotra' => $gotra,
