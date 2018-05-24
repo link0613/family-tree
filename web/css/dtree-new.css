@@ -343,6 +343,10 @@
     width: 100%;
     justify-content: center;
 }
+.create-entry-wrapper>img {
+    position: absolute;
+    top: 98px;
+}
 
 @media print {
     .footer {
