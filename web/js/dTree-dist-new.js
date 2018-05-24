@@ -3,6 +3,7 @@ var _createClass = (function () { function defineProperties(target, props) { for
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
 var GLOBAL_OFFSET = 600;
+var tree_detpth = 0;
 
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : global.dTree = factory();
@@ -64,7 +65,6 @@ var GLOBAL_OFFSET = 600;
 
                 // Compute the layout.
                 this.tree = d3.tree().nodeSize([nodeSize[0] * 1, nodeSize[1] * 2]);
-
                 this.tree.separation(function separation(a, b) {
                     if (a.data.hidden || b.data.hidden) {
                         return 0.3;
@@ -116,6 +116,7 @@ var GLOBAL_OFFSET = 600;
                     return d.data.hidden ? false : true;
                 });
 
+                
                 peopleImages.append("pattern")
                     .attr("id", function(d) {
                         return "circle-image-" + d.data.id;
@@ -146,10 +147,17 @@ var GLOBAL_OFFSET = 600;
                             return '/images/' + d.data['class'] + '.jpg';
                         })
                 ;
-
+                
                 peopleImages.append("circle")
                     .attr('cx', function (d) {
-                        console.log(d);
+                        if (d.depth > tree_detpth) {
+                            tree_detpth = d.depth
+                            var original_transform = d3.select('svg>g').attr('transform')
+                            var original_x = original_transform.split(',')[0].split('(')[1]
+                            d3.select('svg>g')
+                                .attr('transform', 'translate(' + original_x + ',' + (tree_detpth * 56 - 120) + ')')
+
+                        }
                         return (d.x + GLOBAL_OFFSET + 5) + 'px';
                     }).attr('cy', function (d) {
                         return (d.y - d.cHeight / 2 + 5) + 'px';
