@@ -335,22 +335,18 @@ class ProfileController extends CController
 
             return $this->refresh();
         }
-        try {
-            if (isset($data['stay_treeview'])) {
-                return $this->render('view', [
-                    'model' => $model,
-                    'gotra' => $gotra,
-                    'gotras' => $gotras,
-                    'death' => $death
-                ]);
-            } else {
-                $this->refresh();
-                return $this->redirect(['tree/chart', 'id' => $model->getId()]);
-            }
-        } catch (Exception $e) {
+        if (!isset($data['stay_treeview'])) {
+            return $this->render('view', [
+                'model' => $model,
+                'gotra' => $gotra,
+                'gotras' => $gotras,
+                'death' => $death
+            ]);
+        } else {
             $this->refresh();
             return $this->redirect(['tree/chart', 'id' => $model->getId()]);
         }
+
     }
 
     /**
