@@ -150,16 +150,6 @@ var tree_detpth = 0;
                 
                 peopleImages.append("circle")
                     .attr('cx', function (d) {
-                        if (d.depth > tree_detpth) {
-                            tree_detpth = d.depth
-                            var original_transform = d3.select('svg>g').attr('transform')
-                            var original_x = original_transform.split(',')[0].split('(')[1]
-                            var svg_height = screen.height
-                            console.log (svg_height)
-                            d3.select('svg>g')
-                                .attr('transform', 'translate(' + original_x + ',' + (svg_height / 2 - tree_detpth * 56 - 110) + ')')
-
-                        }
                         return (d.x + GLOBAL_OFFSET + 5) + 'px';
                     }).attr('cy', function (d) {
                         return (d.y - d.cHeight / 2 + 5) + 'px';
