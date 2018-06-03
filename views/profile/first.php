@@ -11,100 +11,115 @@ $this->params['breadcrumbs'][] = $this->title;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div id="first_form" class="block">
-    <h1>Begin with adding your Father or Mother</h1>
-    <?php $form = ActiveForm::begin([
-        'action' => '/add-person',
-        'fieldConfig' => [
-            'inputOptions' => ['class' => ' form-control'],
-        ],
-    ]); ?>
+<?php $form = ActiveForm::begin([
+    'action' => '/add-person',
+    'fieldConfig' => [
+        'inputOptions' => ['class' => ' form-control'],
+    ],
+]); ?>
 
     <?php echo Html::hiddenInput('parent_id', $rootItem->getId()); ?>
-    <div class="row">
-        <div class="col-md-6 col-xs-12">
-            <?= $form->field($model, 'first_name')->textInput([
-                'maxlength' => true,
-                'placeholder' => $model->getAttributeLabel('first_name') . '...'
-            ]) ?>
-            <?= $form->field($model, 'last_name')->textInput([
-                'maxlength' => true,
-                'placeholder' => $model->getAttributeLabel('last_name') . '...'
-            ]) ?>
-            <?= $form->field($model, 'email')->textInput([
-                'maxlength' => true,
-                'placeholder' => $model->getAttributeLabel('email') . '...'
-            ]) ?>
-
-        </div>
-        <div class="col-md-6 col-xs-12">
-
-            <?= $form->field($gotra, 'name',
-                ['enableClientValidation' => false])->widget(\yii\jui\AutoComplete::className(),
-                [
-                    'options' => [
-                        'class' => 'form-control',
-                        'placeholder' => 'Gotra'
-                    ],
-                    'clientOptions' => [
-                        'css' => 'form-control',
-                        'source' => $gotras,
-                    ],
-                ]) ?>
-
-            <?= $form->field($model, 'b_date')->widget(\yii\jui\DatePicker::className(),
-                [
-                    'clientOptions' =>
-                        [
-                            'changeYear' => true,
-                            'changeMonth' => true,
-                            'showAnim' => "slideDown",
-                           'defaultDate' => '-20y',
-                            'yearRange' => "1900:-6y",
-                            ' showButtonPanel' => false
-
-                        ],
-                    'attribute' => 'b_date',
-                    'options' => [
-                        'placeholder' => 'Select birth date...',
-                        'class' => 'form-control',
-                    ],
-                    'dateFormat' => 'yyyy-MM-dd',
-                ]) ?>
 
 
-            <?php
-            /*
-            $gender = [
-                Item::GENDER_FEMALE => 'Mother',
-                Item::GENDER_MALE => 'Father'
-            ];
-            */
-            //  echo $form->field($model, 'gender')->dropDownList($gender)->label('Father or Mother');
+    <div class="modal fade" id="nodeType1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="padding: 8px;">
+                    <p>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </p>
+                    <h1 class="modal-title">Begin with adding your Father or Mother</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <?= $form->field($model, 'first_name')->textInput([
+                                'maxlength' => true,
+                                'placeholder' => $model->getAttributeLabel('first_name') . '...'
+                            ]) ?>
+                            <?= $form->field($model, 'last_name')->textInput([
+                                'maxlength' => true,
+                                'placeholder' => $model->getAttributeLabel('last_name') . '...'
+                            ]) ?>
+                            <?= $form->field($model, 'email')->textInput([
+                                'maxlength' => true,
+                                'placeholder' => $model->getAttributeLabel('email') . '...'
+                            ]) ?>
 
-            echo $form->field($model, 'node_type')
-                ->dropDownList([
-                    Item::NODE_TYPE_FATHER => 'Father',
-                    Item::NODE_TYPE_MOTHER => 'Mother'
-                ])
-                ->label('Father or Mother');
-            ?>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+
+                            <?= $form->field($gotra, 'name',
+                                ['enableClientValidation' => false])->widget(\yii\jui\AutoComplete::className(),
+                                [
+                                    'options' => [
+                                        'class' => 'form-control',
+                                        'placeholder' => 'Gotra'
+                                    ],
+                                    'clientOptions' => [
+                                        'css' => 'form-control',
+                                        'source' => $gotras,
+                                    ],
+                                ]) ?>
+
+                            <?= $form->field($model, 'b_date')->widget(\yii\jui\DatePicker::className(),
+                                [
+                                    'clientOptions' =>
+                                        [
+                                            'changeYear' => true,
+                                            'changeMonth' => true,
+                                            'showAnim' => "slideDown",
+                                        'defaultDate' => '-20y',
+                                            'yearRange' => "1900:-6y",
+                                            ' showButtonPanel' => false
+
+                                        ],
+                                    'attribute' => 'b_date',
+                                    'options' => [
+                                        'placeholder' => 'Select birth date...',
+                                        'class' => 'form-control',
+                                    ],
+                                    'dateFormat' => 'yyyy-MM-dd',
+                                ]) ?>
+
+
+                            <?php
+                            /*
+                            $gender = [
+                                Item::GENDER_FEMALE => 'Mother',
+                                Item::GENDER_MALE => 'Father'
+                            ];
+                            */
+                            //  echo $form->field($model, 'gender')->dropDownList($gender)->label('Father or Mother');
+
+                            echo $form->field($model, 'node_type')
+                                ->dropDownList([
+                                    Item::NODE_TYPE_FATHER => 'Father',
+                                    Item::NODE_TYPE_MOTHER => 'Mother'
+                                ])
+                                ->label('Father or Mother');
+                            ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <hr>
+                        <input type="hidden" id="stay_treeview" name="stay_treeview" value="1">
+                        <?= Html::submitButton('Add', ['class' => ' btn btn-theme', 'style' => ['width' => '20%']]) ?>
+                        <button type="button" class=" btn btn-theme" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="form-group">
-        <hr>
-        <input type="hidden" id="stay_treeview" name="stay_treeview" value="1">
-        <?= Html::submitButton('Add', ['class' => ' btn btn-theme', 'style' => ['width' => '33%']]) ?>
-    </div>
-
-    <?php ActiveForm::end(); ?>
-
-    <?php $this->registerJs('defineGender();') ?>
-
-
+<?php ActiveForm::end(); ?>
 <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
-</div>
+<?php $this->registerJs('defineGender();') ?>
+ 
+
+
 <div id="first_tree" class="create-entry-wrapper">
     <img src="/images/add-curve1-black.svg" alt="" class="add-entry-curve" style="opacity: 1;">
     <img src="/images/add-curve2-black.svg" alt="" class="add-entry-curve" style="opacity: 1;">
@@ -117,16 +132,17 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class='add-entry-fname add-entry-text-item'><?= $rootItem->b_date ?></div>
             </div>
         </div>
-        <div id="btn_select_father" class="new-entry-father add-entry-button">
+        <div id="btn_select_father" class="new-entry-father add-entry-button" data-toggle='modal' data-target='#nodeType1'>
             <img src="/images/man.jpg" class="new-entry-image">
             <div class="create-entry-text">Add Father</div>
         </div>
-        <div id="btn_select_mother" class="new-entry-mother add-entry-button">
-        <img src="/images/woman.jpg" class="new-entry-image">
+        <div id="btn_select_mother" class="new-entry-mother add-entry-button" data-toggle='modal' data-target='#nodeType1'>
+            <img src="/images/woman.jpg" class="new-entry-image">
             <div class="create-entry-text">Add Mother</div>
         </div>
     </div>
 </div>
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- eieght -->
 <ins class="adsbygoogle"
@@ -135,15 +151,10 @@ $this->params['breadcrumbs'][] = $this->title;
      data-ad-slot="2292393471"
      data-ad-format="auto"></ins>
 <script> 
-    document.getElementById('first_form').style.display='none';
     document.getElementById('btn_select_father').addEventListener ('click', function() {
-        document.getElementById('first_form').style.display='';
-        document.getElementById('first_tree').style.display='none';
         document.getElementById('item-node_type').value = '2';
     });
     document.getElementById('btn_select_mother').addEventListener ('click', function() {
-        document.getElementById('first_form').style.display='';
-        document.getElementById('first_tree').style.display='none';
         document.getElementById('item-node_type').value = '1';
     });
     document.getElementById('btn_edit_my_profile').addEventListener ('click', function() {
